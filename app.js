@@ -13,20 +13,6 @@ function errorHandler(error) {
   alert("something wrong with server! try again after some time");
 }
 
-// function btnHandler() {
-//     var inputText = txtInput.value; // taking input
-
-//     // calling server for processing
-//     fetch(getTranslationURL(inputText))
-//         .then(response => response.json())
-//         .then(json => {
-//             var translatedText = json.contents.translated;
-//             divOut.innerText = translatedText; // output
-//            })
-//         .catch(errorHandler)
-// };
-
-// btnTranslate.addEventListener("click", btnHandler)
 
 btn.addEventListener("click", function btnHandler() {
   fetch(translateURL(userinput.value))
